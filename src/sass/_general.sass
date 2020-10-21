@@ -1,0 +1,355 @@
+﻿nav 
+	position: fixed
+	width: 100%
+	min-height: 50px
+	background-color: $var1
+	z-index: 1
+
+.menu 
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	&_link 
+		color: $var2
+		font-style: 15px
+		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $var2
+	
+	&_item 
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+	
+
+.subheader 
+	margin-top: 50px
+	position: absolute
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	&_logo 
+		display: block
+		margin-top: 16px
+		max-width: 100%
+	
+	&_official 
+		margin-top: 6px
+		opacity: 0.5
+		font-size: 13px
+		font-family: "Roboto"
+		color: $var2
+		font-weight: 400
+	
+	&_call 
+		font-size: 12px
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		margin-top: 19px
+		font-weight: 300
+		text-align: right
+	
+	&_phone 
+		display: block
+		margin-top: 8px
+		font-size: 22px
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-decoration: none
+		text-align: right
+		font-weight: 400
+		line-height: 12px
+	
+	&_btn 
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0,0,0,0.12)
+		background-image: linear-gradient(to top, $var3 0%, #4ce2ff 100%)
+		font-size: 14px
+		border-radius: 4px
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		border: none
+		+btn_hover
+
+.hamburger
+	display: none	
+
+.promo 
+	min-height: 800px
+	background: url('../img/main_bg.png') center center/cover no-repeat
+	padding: 200px 0 130px 0
+	&_header 
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		font-size: 60px
+		font-weight: 700
+	
+	&_subheader 
+		font-size: 40px
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+	
+	&_descr 
+		text-align: center
+		color: rgb(255, 255, 255)
+	
+	&_btn 
+		display: block
+		margin: 120px auto 0 auto
+		width: 250px
+		height: 60px
+		box-shadow: inset 0 -3px 0 rgba(0,0,0,0.12)
+		background-image: linear-gradient(to top, $var3 0%, #4ce2ff 100%)
+		font-size: 14px
+		border-radius: 4px
+		font-family: "Roboto"
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		border: none
+		+btn_hover
+	
+
+.label 
+	margin: 70px auto 0 auto
+	padding-top: 5px
+	background-color: rgb(0, 0, 0)
+	width: 110px
+	height: 24px
+	color: white
+	font-size: 11px
+	font-family: "Roboto"
+	text-transform: uppercase
+	text-align: center
+
+.title 
+	margin-top: 25px
+	font-size: 38px
+	font-family: "Roboto"
+	color: rgb(34, 34, 34)
+	font-weight: bold
+	text-transform: uppercase
+	text-align: center
+
+.reason 
+	margin-top: 38px
+.reasons_sec
+	padding-bottom: 65px
+
+.reasons_descr 
+	padding-left: 175px
+	line-height: normal
+
+.reasons_first_img 
+	float: left
+	margin: 20px 34px 0 26px
+
+.reasons_second_img 
+	float: left
+	margin: 20px 34px 0 26px
+
+span.reasons_h 
+	color: $var3
+
+.subtitle
+	color: #222222
+	margin-top: 5px
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+
+.mobile
+	background: url('../img/bg_app.png') center center/cover no-repeat
+	padding: 48px 0 79px 0
+	min-height: 800px
+	.label
+		margin: 0 auto
+	&_img1
+		margin-top: 35px
+	&_img2
+		margin-top: 19px
+
+.choise
+	position: relative
+	background: url('../img/bg_app.png') center center/cover no-repeat
+	height: 900px
+	width: 100%
+	.firsthalf
+		background-color: #070716
+		height: 500px
+		padding-top: 70px
+		.label
+			margin: 0 auto 30px auto
+			background-color: white
+			color: black
+		.title, .subtitle 
+			color: white
+	.car
+		position: absolute
+		margin-top: 230px
+	.descr
+		margin-top: 220px
+		text-align: center
+		font-size: 17px
+		font-family: "Roboto"
+		color: rgb(34, 34, 34)
+
+.terms
+	padding: 0 0 54px 0
+	font-family: "Roboto"
+	&_block
+		margin: 33px 0
+	&_title
+		color: $var3
+		margin-bottom: 10px
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 20px
+		li
+			display: inline-block
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: inline-block
+				transform: translate(-5px, -1px)
+				vertical-align: middle
+				width: 21px
+				height: 20px
+				background: url('../icons/blue.png')
+	&_descr
+		margin-top: 25px
+		font-size: 17px
+		line-height: 24px
+		color: $var3
+
+.warning
+	.terms
+		&_title
+			color: $red
+		&_list
+			li
+				&:before
+					background: url('../icons/red.png')
+.world
+	position: relative
+	background: url('../img/world.png') center center/cover no-repeat
+	height: 750px
+	padding: 50px 0 52px 0
+	.label
+		margin: 0 auto 30px auto
+		background-color: white
+		color: black
+		width: 75px
+	.title, .subtitle 
+		color: white
+	a
+		&.all_city
+			display: block
+			text-align: center
+			margin-top: 500px
+			font-size: 15px
+			font-family: "Roboto"
+			color: rgb(31, 186, 214)
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+				+active
+footer
+	position: relative
+	height: 150px
+	width: 100%
+	.line
+		background-color: rgb(31, 186, 214)
+		width: 299px
+		height: 4px	
+		margin: 14px auto 0 auto
+	.first_list
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		margin-top: 33px
+		margin-bottom: 0
+		padding: 0 70px
+		height: 30px
+		li
+			a
+				&.first_link
+					font-size: 15px
+					font-family: "Roboto"
+					color: rgb(7, 7, 22)
+					text-transform: uppercase
+					&:hover
+						text-decoration: none
+						+active
+	.second_list
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		padding: 0 180px
+		li
+			a
+				&.second_link
+					font-size: 11px
+					font-family: "Roboto"
+					color: rgb(153, 153, 153)
+					font-weight: 400
+					text-transform: uppercase
+					&:hover
+						text-decoration: none
+						+active
+	.language
+		text-align: center
+		a
+			text-transform: uppercase
+			font-size: 11px
+			font-family: "Roboto"
+			color: rgb(31, 186, 214)
+			font-weight: 600
+			&:hover
+				text-decoration: none
+				
+				
+
+	.social
+		position: absolute
+		display: flex
+		justify-content: space-between
+		left: 23px
+		top: 30px
+		width: 160px
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #070716
+			border-radius: 100%
+			width: 32px
+			height: 32px
+			i
+				color: #fff
+				+active			
+	.platforms
+		position: absolute
+		right: 23px
+		top: 30px
+		+active
